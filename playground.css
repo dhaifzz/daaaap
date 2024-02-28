@@ -1,0 +1,147 @@
+*{
+       text-decoration: none;
+       overflow: hidden;
+    }
+
+body{
+       min-height: 100vh;
+       background: url('wallpaper1.png') no-repeat;
+       background-size: cover;
+       background-position: center;
+}
+  
+header{
+       position: fixed;
+       font-family: Verdana;
+       padding-right: 40px;
+       padding-left: 35px;
+       padding-top: 5px;
+       padding-bottom: 5px;
+       position: sticky;
+}
+    
+.playG {
+       display: flex;
+       align-items: center;
+       justify-content: space-between;
+    }
+    
+.logos a {    
+       font-size: 4em;
+       font-weight: bold;
+       color: rgb(192, 60, 236);
+    }
+    
+.nav {
+       display: flex;
+       align-items: center;
+    }
+    
+.nav-menu {
+       margin: 0;
+       padding: 0;
+       list-style: none;
+       margin-right: 20px; 
+
+    }
+    
+.nav-menu li {
+       display: inline-block;
+       padding: 0;
+       margin: 0;
+       padding-top: 10px;
+       padding-left: 40px;
+    }
+    
+.nav-menu a {
+       color: white;
+       font-size: 22px;
+       font-weight: bold;
+       margin-right: 25px;
+       position: relative;
+       padding-bottom: 3.5px;
+    }
+
+.nav-menu a::before {
+       content: '';
+       position: absolute;
+       bottom: 0;
+       left: 0;
+       width: 0;
+       height: 10px;
+       background: rgb(201, 20, 221);
+       z-index: -1;
+       transition: width 0.2s ease;
+}
+    
+.nav-menu a:hover::before {
+       width: 100%;
+}
+    
+button {
+       background-color: rgb(0, 0, 0);
+       border-radius: 10px;
+       border: none;
+       margin-bottom: 10px;
+       margin-top: 10px;
+       width: 100px;
+       padding: 20px;
+       padding-right: 125px;
+       padding-left: 30px;
+       vertical-align: middle;
+    }
+    
+button a {
+       color: rgb(153, 5, 158);
+       font-weight: bold;
+       font-size: 24px;
+    }
+
+.Galaxy{
+       background-color: rgb(167, 4, 231);
+       border: none;
+       outline: none;
+       padding: 10px 20px;
+       align-items: center;
+       border-radius: 20px;
+       color: white;
+       font-weight: 200;
+       font-size: 14px;
+}
+
+.content{
+       margin-top: 7%;
+       color: white;
+       max-width: 630px;
+       padding-left: 30em;
+}
+
+.content h1{
+       font-size: 80px;
+       font-weight: 600;
+       line-height: 85px;
+       margin-bottom: 25px;
+       text-align: center;
+}
+
+.content p{
+       text-align: center;
+}
+
+.content form{
+       display: flex;
+       align-items: center;
+       background: white;
+       border-radius: 35px;
+       padding: 10px;
+       margin-top: 30px;
+}
+
+.content form input{
+       border: 0;
+       outline: 0;
+       width: 100%;
+       font-size: 19px;
+       padding-left: 10px;
+
+}
